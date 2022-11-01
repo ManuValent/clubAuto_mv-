@@ -1,0 +1,245 @@
+:root {
+    --black: #252525;
+    --grey : #474747;
+    --orange: #ec6c0b;
+    --shaded-orange: #ffbb00c2;
+    --red: #bc2c2cb5;
+    --blue: #107fbf;
+    --white: #FFFFFF;
+    --shaded-red: #e70808ca;
+    --shaded-white: #cececeb8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.macouleur1{
+    color: var(--orange);
+}
+.macouleur2{
+    color: var(--blue)
+}
+.macouleur3{
+    color: var(--white);
+}
+.macouleur4{
+    color: var(--black);
+}
+.img-header{
+    width: 20px;
+}
+#mainHeader{
+    position: fixed;
+    z-index: 3;
+}
+main{
+    position: relative;
+    top: 130px;
+    z-index: 2;
+}
+#mainFooter{
+    position: relative;
+    top: 130px;
+    z-index: 2;
+}
+#mainFooter img{
+    width: 300px;
+    height: 70px;
+}
+#mainHeader img{
+    width: 70px;
+    height: 50px;
+}
+#mainNav{
+    background-color: var(--shaded-white);
+}
+#mainNav ul{
+    list-style-type: none;
+}
+#mainNav a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--black);
+}
+#mainNav a:hover{
+    color: var(--white);
+    background-color: var(--orange);
+}
+#pageIndex #mainTitle{
+    background-image : url("/images/vehicule1.jpg");
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+}
+#pageIndex ul {
+    list-style: none;
+}   
+#pageIndex ul li:before {
+    content: '✓';
+    color: #ec6c0b;
+    padding-right: 20px;
+}
+#pageIndex #locationVente{
+    background: url(/images/vente-location.jpg) center center / cover no-repeat;
+    height: 400px;
+}
+#pageIndex #vehiculesRecents h1{
+    border-bottom:#ec6c0b solid;
+}
+#pageIndex #pourquoiNousChoisir img{
+    width: 70px;
+    height: 50px;
+}
+#pageIndex #venteEtLocation{
+    background: url(/images/vehicule3.jpg) top center / cover no-repeat;
+    height: 400px;
+}
+#pageContact img{
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: -600px;
+}
+#pageContact section{
+    background-color: rgb(204, 204, 204);
+    position:relative;
+    width: 100%;
+    height: 400px;
+}
+#formulaireContact{
+    position: absolute;
+    bottom: 100px;
+    left: 200px;
+}
+#pageContact textarea{
+    background-color: #ececec;
+    resize: none;
+    height: 130px;
+}
+#pageContact input{
+    background-color: #ececec;
+}
+#titleLocationEtVente{
+    background: linear-gradient(rgba(0, 0, 0, 0.453),rgba(0, 0, 0, 0.431)), url(/images/vente-location.jpg) top center / cover no-repeat;
+    background-color: var(--black);
+    opacity: 0.6;
+    height: 300px;
+    width: 100%;
+}
+#titleLocationEtVente h1{
+    padding-left: 10%;
+}
+#pageLocationEtVente nav button {
+    background-color: #ececec;
+}
+#pageLocationEtVente input {
+    background-color: #ececec;
+}
+#filtresVenteEtLocation{
+    position: relative;
+    bottom:50px;
+}
+#contentCarSheet{
+    width:75%;
+}
+#ficheNav{
+    background-color: var(--black);
+}
+#ficheNav ul{
+    list-style-type: none;
+}
+#ficheNav a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--white);
+}
+#ficheNav a:hover{
+    color: var(--white);
+    background-color: var(--white);
+    color: #252525;
+    border-top:#ec6c0b solid;
+}
+#textRight{
+    border-left: #ec6c0b solid;
+}
+#optionsCar {
+    list-style: none;
+}  
+#optionsCar li:before {
+    content: '✓';
+    color: var(--white);
+    background-color: #ec6c0b;
+    border-radius: 100%;
+    margin-right: 0.5em;
+}
+#mainFooter button{
+    background-color: var(--orange);
+    color: var(--white);
+}
+@media screen and (max-width: 480px){
+    #mainHeader{
+        position: static;
+    }
+    #pageIndex{
+        position: relative;
+        top: 0px;
+    }
+    #pageIndex #mainTitle{
+        background-image: none;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    } 
+    #pageContact img{
+        position:relative;
+        width:100%;
+        margin: 0 0 -50px 0;
+    }
+    #pageContact section{
+        background-color: rgb(204, 204, 204);
+        position:relative;
+        width: 100%;
+        height: 600px;
+    }
+    #formulaireContact{
+        position: relative;
+        bottom: 200px;
+        left:0;
+    }
+    #pageContact{
+        position: relative;
+        top:10px;
+    }
+    #pageLocationEtVente{
+        position:relative;
+        top:0;
+    }
+    #filtresVenteEtLocation{
+        position: relative;
+        bottom:0;
+    }
+    #accesFicheVehicule button{
+        position : relative;
+        bottom:70px;
+        padding: 20px;
+    }
+    #pageficheVéhicule{
+        position: relative;
+        top:0;
+    }
+    #contentCarSheet{
+        width:100%;
+    }
+    #mainFooter{
+        position: relative;
+        top:0;
+    }
+    #ficheNav a:hover{
+        color: var(--white);
+        background-color: var(--white);
+        color: #252525;
+        border-top:#ec6c0b solid;
+        width: 400px;
+        justify-content: center;
+    }
+}
